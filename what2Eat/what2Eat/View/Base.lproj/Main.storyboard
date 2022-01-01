@@ -28,13 +28,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-wJ-y87">
                                         <rect key="frame" x="10" y="500" width="355" height="147"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sag-kw-iD2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sag-kw-iD2">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
                                                 <color key="backgroundColor" red="0.48425126889999998" green="0.77637964370000001" blue="0.28180637489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="uJr-0C-61I"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="녜!">
@@ -78,7 +77,6 @@
                                     <constraint firstItem="IcV-oT-avI" firstAttribute="centerX" secondItem="7bj-AW-uue" secondAttribute="centerX" id="OPG-2H-wc5"/>
                                     <constraint firstItem="IcV-oT-avI" firstAttribute="leading" secondItem="7bj-AW-uue" secondAttribute="leading" constant="30" id="UMg-5B-SEZ"/>
                                     <constraint firstItem="4XN-wJ-y87" firstAttribute="centerX" secondItem="7bj-AW-uue" secondAttribute="centerX" id="cMX-8U-Cj1"/>
-                                    <constraint firstAttribute="trailing" secondItem="IcV-oT-avI" secondAttribute="trailing" constant="30" id="cmg-XD-3xu"/>
                                     <constraint firstItem="4XN-wJ-y87" firstAttribute="leading" secondItem="7bj-AW-uue" secondAttribute="leading" constant="10" id="og7-ZW-PUo"/>
                                     <constraint firstAttribute="trailing" secondItem="4XN-wJ-y87" secondAttribute="trailing" constant="10" id="pdE-tV-1Tm"/>
                                     <constraint firstAttribute="bottom" secondItem="4XN-wJ-y87" secondAttribute="bottom" constant="20" id="sms-tI-V5O"/>
