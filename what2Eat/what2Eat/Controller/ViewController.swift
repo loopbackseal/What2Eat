@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     
     var brain = QuestionBrain()
     
-    
     @IBAction func buttonPressed(_ sender: UIButton) {
         let answer = sender.currentTitle!
         brain.setQuestionKey(answer)
@@ -35,15 +34,21 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        noButton.isEnabled = true
-        noButton.backgroundColor = UIColor.orange
-        if brain.isInProcess() {
-            questionLabel.text = brain.getText()
+        if !brain.isInProcess() {
+            self.performSegue(withIdentifier: "presentToResult", sender: self)
+            // timer?
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                self.brain.setQuestionKey("")
+                self.questionLabel.text = self.brain.getText()
+            }
         } else {
-            questionLabel.text = brain.getRestaurant()
-            noButton.backgroundColor = UIColor.darkGray
-            noButton.isEnabled = false
+            questionLabel.text = brain.getText()
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultViewController = segue.destination as? ResultViewController else { return }
+        resultViewController.restaurantName = brain.getRestaurant()
     }
 }
 

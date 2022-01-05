@@ -97,11 +97,67 @@
                         <outlet property="noButton" destination="ic7-0G-R96" id="9IY-kQ-cPp"/>
                         <outlet property="questionLabel" destination="IcV-oT-avI" id="vLh-a8-Wwz"/>
                         <outlet property="yesButton" destination="sag-kw-iD2" id="8hT-QM-nyk"/>
+                        <segue destination="Yv6-a2-ci2" kind="presentation" identifier="presentToResult" id="2ie-1O-ItZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23" y="125"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="7N8-LJ-uee">
+            <objects>
+                <viewController id="Yv6-a2-ci2" customClass="ResultViewController" customModule="what2Eat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7M-Kb-MhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJN-NB-K4g">
+                                <rect key="frame" x="46" y="250" width="283" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-Ky-od0">
+                                <rect key="frame" x="100" y="411" width="175" height="55"/>
+                                <color key="backgroundColor" red="0.34724277260000003" green="0.69403553009999996" blue="0.42416405680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ql2-1O-2qw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다시하기!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="Yv6-a2-ci2" eventType="touchUpInside" id="sXf-6J-pEj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cqA-kH-Lxb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vdx-Ky-od0" firstAttribute="top" secondItem="tJN-NB-K4g" secondAttribute="bottom" constant="125" id="Hyb-8U-IMU"/>
+                            <constraint firstItem="tJN-NB-K4g" firstAttribute="centerX" secondItem="e7M-Kb-MhE" secondAttribute="centerX" id="Wbf-ft-xKi"/>
+                            <constraint firstItem="tJN-NB-K4g" firstAttribute="leading" secondItem="e7M-Kb-MhE" secondAttribute="leadingMargin" constant="30" id="aAi-8b-6dM"/>
+                            <constraint firstItem="tJN-NB-K4g" firstAttribute="top" secondItem="cqA-kH-Lxb" secondAttribute="top" constant="250" id="aZX-YC-gm1"/>
+                            <constraint firstItem="Vdx-Ky-od0" firstAttribute="centerX" secondItem="e7M-Kb-MhE" secondAttribute="centerX" id="v0Y-pt-oaZ"/>
+                            <constraint firstItem="cqA-kH-Lxb" firstAttribute="trailing" secondItem="Vdx-Ky-od0" secondAttribute="trailing" constant="100" id="yol-gz-fR5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="restartButton" destination="Vdx-Ky-od0" id="EsI-A8-dTC"/>
+                        <outlet property="resultLabel" destination="tJN-NB-K4g" id="inx-nc-jEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G5-4h-bCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="125"/>
         </scene>
     </scenes>
     <resources>
