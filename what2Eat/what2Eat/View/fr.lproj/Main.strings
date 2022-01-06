@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IcV-oT-avI"; */
+"IcV-oT-avI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "다시하기!"; ObjectID = "Vdx-Ky-od0"; */
+"Vdx-Ky-od0.normalTitle" = "다시하기!";
+
+/* Class = "UIButton"; normalTitle = "아니요!"; ObjectID = "ic7-0G-R96"; */
+"ic7-0G-R96.normalTitle" = "아니요!";
+
+/* Class = "UIButton"; normalTitle = "녜!"; ObjectID = "sag-kw-iD2"; */
+"sag-kw-iD2.normalTitle" = "녜!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tJN-NB-K4g"; */
+"tJN-NB-K4g.text" = "Label";

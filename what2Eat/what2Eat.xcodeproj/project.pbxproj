@@ -18,6 +18,7 @@
 		9B3EF613277EBC1E00249F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3EF612277EBC1E00249F02 /* Restaurant.swift */; };
 		9B3EF618277EC6E500249F02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EF61A277EC6E500249F02 /* InfoPlist.strings */; };
 		9B3FE53B2785652300D8BD3B /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FE53A2785652300D8BD3B /* resultViewController.swift */; };
+		9B3FE54127857F3F00D8BD3B /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FE54327857F3F00D8BD3B /* infoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		9B3EF615277EC63B00249F02 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9B3EF619277EC6E500249F02 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B3FE53A2785652300D8BD3B /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		9B3FE53D27857EF500D8BD3B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		9B3FE53E27857EF600D8BD3B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9B3FE54227857F3F00D8BD3B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/infoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				9B3EF600277E9FF900249F02 /* LaunchScreen.storyboard */,
 				9B3EF603277E9FF900249F02 /* Info.plist */,
 				9B3EF61A277EC6E500249F02 /* InfoPlist.strings */,
+				9B3FE54327857F3F00D8BD3B /* infoPlist.strings */,
 			);
 			path = what2Eat;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				en,
 				Base,
 				ko,
+				fr,
 			);
 			mainGroup = 9B3EF5E9277E9FF500249F02;
 			productRefGroup = 9B3EF5F3277E9FF500249F02 /* Products */;
@@ -171,6 +177,7 @@
 				9B3EF618277EC6E500249F02 /* InfoPlist.strings in Resources */,
 				9B3EF5FF277E9FF900249F02 /* Assets.xcassets in Resources */,
 				9B3EF5FD277E9FF500249F02 /* Main.storyboard in Resources */,
+				9B3FE54127857F3F00D8BD3B /* infoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +206,7 @@
 			children = (
 				9B3EF5FC277E9FF500249F02 /* Base */,
 				9B3EF614277EC63A00249F02 /* ko */,
+				9B3FE53D27857EF500D8BD3B /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 			children = (
 				9B3EF601277E9FF900249F02 /* Base */,
 				9B3EF615277EC63B00249F02 /* ko */,
+				9B3FE53E27857EF600D8BD3B /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -218,6 +227,14 @@
 				9B3EF619277EC6E500249F02 /* ko */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9B3FE54327857F3F00D8BD3B /* infoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B3FE54227857F3F00D8BD3B /* fr */,
+			);
+			name = infoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
